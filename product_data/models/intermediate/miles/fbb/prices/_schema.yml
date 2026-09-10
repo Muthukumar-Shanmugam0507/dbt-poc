@@ -1,0 +1,53 @@
+version: 2
+
+models:
+  - name: int_fbb_price_variants
+    description: "Intermediate model for the miles price variants"
+    columns:
+      - name: PRODUCT_ID
+      - name: MAX_DISCOUNT_ID
+      - name: BACKORDER_MAX_VARIANTS_BRW
+      - name: BACKORDER_MIN_VARIANTS_BRW
+      - name: BACKORDER_MAX_VARIANTS
+      - name: BACKORDER_MIN_VARIANTS
+      - name: MAX_BRW_VARIANTS
+      - name: MIN_BRW_VARIANTS
+      - name: MIN_PRICE_VARIANTS
+      - name: MAX_PRICE_VARIANTS
+      - name: MIN_FS_PRICE_VARIANTS
+      - name: MAX_FS_PRICE_VARIANTS
+      - name: MIN_BRW_ONLY_VARIANTS
+      - name: MAX_BRW_ONLY_VARIANTS
+      - name: MIN_CLR_ONLY_VARIANTS
+      - name: MAX_CLR_ONLY_VARIANTS
+      - name: BRW_SS_VARIANT_ID
+      - name: CLR_SS_VARIANT_ID
+      - name: FS_SS_VARIANT_ID
+  - name: int_fbb_prices
+    description: "Intermediate model for the miles prices"
+    columns:
+      - name: PRODUCT_ID
+      - name: PRICE
+      - name: MIN_BROWSE_PRICE
+      - name: MIN_CLEARANCE_PRICE
+      - name: MIN_FINAL_SALE_PRICE
+      - name: MIN_BRW_PRICE
+      - name: MAX_BRW_PRICE
+      - name: MIN_CLR_PRICE
+      - name: MAX_CLR_PRICE
+      - name: MIN_FS_PRICE
+      - name: MAX_FS_PRICE
+      - name: MIN_BRW_ONLY_PRICE
+      - name: MAX_BRW_ONLY_PRICE
+      - name: MIN_CLR_ONLY_PRICE
+      - name: MAX_CLR_ONLY_PRICE
+      - name: BRW_LIST_PRICE
+      - name: CLR_LIST_PRICE
+      - name: FS_LIST_PRICE
+      - name: BRW_SALE_PRICE
+      - name: CLR_SALE_PRICE
+      - name: FS_SALE_PRICE
+      - name: BRW_ONLY_SALE_PRICE
+      - name: BRW_ONLY_LIST_PRICE
+      - name: CLR_ONLY_SALE_PRICE
+      - name: CLR_ONLY_LIST_PRICE

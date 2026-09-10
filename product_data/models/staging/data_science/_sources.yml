@@ -1,0 +1,21 @@
+version: 2
+
+sources:
+  - name: DS_PRODUCT_ATTRIBUTION
+    database: DS_PROJECTS
+    schema: PRODUCT_DATA_MODEL
+    tables:
+      - name: PRODUCT_ATTRIBUTES
+      - name: PRODUCT_VARIATIONS_ATTRIBUTES
+
+  - name: ELOQUII_LAYDOWN_IMAGES
+    database: DS_PROJECTS
+    schema: ELOQUII_OUTFITS
+    tables:
+      - name: LAYDOWN_IMAGES
+
+  - name: WW_LAYDOWN_IMAGES
+    database: DS_PROJECTS
+    schema: BEYONSEE
+    tables:
+      - name: LAYDOWN_IMAGES

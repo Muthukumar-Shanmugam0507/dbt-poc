@@ -1,0 +1,37 @@
+version: 2
+
+sources:
+  - name: FBB_PRODUCTS
+    database: LAND
+    schema: PRODUCT
+    tables:
+      - name: PRODUCT
+      - name: BRAND
+      - name: COLOR
+      - name: STYLE
+      - name: SIZE
+      - name: INVENTORY
+      - name: PRICE
+      - name: PRODUCTIMAGE
+      - name: IMAGE
+      - name: COLORIMAGE
+      - name: SFRA_PRODUCT
+      - name: SFRA_CATEGORY
+      - name: SFRA_CATEGORY_PRODUCT
+      - name: SFRA_IMAGES
+      - name: ATTRIBUTE
+      - name: PRODUCTATTRIBUTEVALUE
+      - name: OMNITURE_DATA
+      - name: COLORSORTORDERSKU
+      - name: SFRA_FINALPRICE
+      - name: SFRA_FINALPRICEPROMO
+      - name: SFRA_CATEGORY_PRODUCTSPLIT
+      - name: BR_SIZECONVERSION
+      - name: SIZECONVERSION
+      - name: CLASSIFICATION
+      - name: SFRA_SIZE
+      - name: SIZESELECTORTABLE_CP
+      - name: COLORMAPPING
+      - name: SFRA_IMAGEURL
+      - name: ATTRIBUTEVALUE
+      - name: SFRA_PRODUCTURL

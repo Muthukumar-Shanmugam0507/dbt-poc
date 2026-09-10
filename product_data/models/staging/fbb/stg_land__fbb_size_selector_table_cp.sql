@@ -1,0 +1,8 @@
+select
+    PRODUCTID as PRODUCT_ID
+    , STYLEID as STYLE_ID
+    , COLORID as COLOR_ID
+    , SIZEID as SIZE_ID
+    , CONVERSION as CONVERSION
+from
+    {{ source('FBB_PRODUCTS', 'SIZESELECTORTABLE_CP') }}

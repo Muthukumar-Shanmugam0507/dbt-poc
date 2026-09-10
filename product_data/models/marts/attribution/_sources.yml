@@ -1,0 +1,15 @@
+version: 2
+
+sources:
+  - name: AI_KOBE
+    database: DS_PROJECTS
+    schema: PRODUCT_DATA_MANAGEMENT
+    tables:
+      - name: AI_ATTRIBUTION
+
+  - name: BEYONSEE_AI_ATTRIBUTION
+    database: DS_PROJECTS
+    schema: PRODUCT_DATA_MODEL
+    tables:
+      - name: SEASONALITY_MAPPING_BEYONSEE
+      - name: PRODUCT_VARIATIONS_GENERIC_COLORS

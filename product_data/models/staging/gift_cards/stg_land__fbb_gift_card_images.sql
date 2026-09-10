@@ -1,0 +1,11 @@
+select
+    to_varchar(GIFTCARDIMAGEID) as GIFT_CARD_IMAGE_ID
+	, to_varchar(GIFTCARDID) as GIFT_CARD_ID
+	, to_varchar(IMAGEID) as IMAGE_ID
+	, to_varchar(IMAGETYPEID) as IMAGE_TYPE_ID
+	, STATUS
+    , date(DATECREATED) as CREATED_AT
+    , date(DATECHANGED) as UPDATED_AT
+	, MODIFIEDBY as MODIFIED_BY
+from
+    {{source('FBB_GIFT_CARDS', 'GIFTCARDIMAGE')}}

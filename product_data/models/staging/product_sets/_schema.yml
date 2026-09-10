@@ -1,0 +1,8 @@
+version: 2
+
+models:
+  - name: stg_land__fbb_sfra_product_sets
+    description: "View from LAND database - SFRA_PRODUCTSET table"
+
+  - name: stg_land__fbb_turn_to_product_set_reviews
+    description: "View from LAND database - TURNTO_PRODUCTSETREVIEWS table"

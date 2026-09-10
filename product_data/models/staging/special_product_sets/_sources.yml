@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: FBB_PRODUCTS
+    database: LAND
+    schema: PRODUCT
+    tables:
+      - name: SFRA_SPECIALPRODUCTSET

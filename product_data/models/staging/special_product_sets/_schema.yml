@@ -1,0 +1,5 @@
+version: 2
+
+models:
+  - name: stg_land__fbb_sfra_special_product_sets
+    description: "View from LAND database - SFRA_SPECIALPRODUCTSET table"

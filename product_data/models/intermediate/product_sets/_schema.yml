@@ -1,0 +1,23 @@
+version: 2
+
+models:
+  - name: int_fbb_product_sets_partitioned
+    description: "Intermediate model to get the miles product set attributes on product level"
+    columns:
+      - name: PRODUCT_SET_ID
+      - name: PRODUCT_ID
+      - name: DISPLAY_NAME
+      - name: URL
+      - name: LIST_PRICE
+      - name: SALE_PRICE
+      - name: SITE_ID
+      - name: RN
+  - name: int_fbb_active_product_sets_from_snapshot
+    description: "Intermediate model to get the attributes for the fbb active product sets"
+    columns:
+      - name: PRODUCT_SET_ID
+      - name: PRODUCT_ID
+      - name: DISPLAY_NAME
+      - name: URL
+      - name: THUMB_IMAGE
+      - name: CREATED_AT

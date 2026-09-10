@@ -1,0 +1,15 @@
+version: 2
+
+models:
+  - name: int_fbb_active_slices_from_snapshot
+    description: "Intermediate model to get the attributes for fbb active slices"
+    columns:
+      - name: PRODUCT_ID
+      - name: COLOR_ID
+      - name: CREATED_AT
+  - name: int_mp_active_slices_from_snapshot
+    description: "Intermediate model to get the attributes for mp active slices"
+    columns:
+      - name: PRODUCT_ID
+      - name: COLOR_ID
+      - name: CREATED_AT

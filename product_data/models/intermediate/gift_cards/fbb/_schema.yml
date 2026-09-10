@@ -1,0 +1,26 @@
+version: 2
+
+models:
+  - name: int_active_fbb_gift_cards
+    description: "Model to get the fbb gift cards with active status, inventory and valid title"
+
+  - name: int_fbb_active_gift_cards_from_snapshot
+    description: "Model for the fbb gift cards with the latest changes"
+
+  - name: int_fbb_gift_card_base_prices
+    description: "Model for the fbb gift cards with min / max prices"
+
+  - name: int_fbb_gift_card_images
+    description: "Model for the fbb gift cards with the base url and image type"
+
+  - name: int_fbb_gift_card_price_variants
+    description: "Model for the fbb gift cards with their price variants"
+
+  - name: int_fbb_gift_card_prices
+    description: "Model for the fbb gift cards with their prices"
+
+  - name: int_fbb_active_gift_card_styles
+    description: "Model to get the active fbb gift card styles on size level"
+
+  - name: int_fbb_active_gift_card_styles_from_snapshot
+    description: "Model for the fbb gift card styles with the latest changes"

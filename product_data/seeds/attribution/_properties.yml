@@ -1,0 +1,20 @@
+version: 2
+
+seeds:
+    - name: kobe_product_level_attributes_seed
+      description: "Seed data for kobe product level attributes"
+      columns:
+        - name: product_id
+          description: "ID of the product"
+        - name: brand_code
+          description: "The brand where the product belongs"
+        - name: attribute_name
+          description: "Name of the attribute"
+        - name: attribute_value
+          description: "Value of the attribute"
+        - name: annotated_by
+          description: "Who annotated the data"
+        - name: created_at
+          description: "Creation date of the record"
+        - name: updated_at
+          description: "Last update date of the record"

@@ -1,0 +1,168 @@
+version: 2
+
+models:
+  - name: mp_active_products
+    description: "Model for mp active products"
+    columns:
+      - name: BRAND_ID
+      - name: BRAND_CODE
+      - name: PRODUCT_ID
+      - name: MF_MASTER_ITEM_ID
+      - name: TITLE
+      - name: MS_DESCRIPTION
+      - name: PCM_BRAND
+      - name: MP_VENDOR_ID
+      - name: IS_DIA
+      - name: PCM_SEO_DESCRIPTION
+      - name: CUSTOMER_REVIEW_COUNT
+      - name: CUSTOMER_REVIEW_AVERAGE
+      - name: IMAGE_URL
+      - name: PRODUCT_URL
+      - name: DIVISION
+      - name: CATEGORY
+      - name: SUBCATEGORY
+      - name: CREATED_AT
+  - name: mp_active_styles
+    description: "Model for mp active styles"
+    columns:
+      - name: BRAND_ID
+      - name: BRAND_CODE
+      - name: PRODUCT_ID
+      - name: MF_MASTER_ITEM_ID
+      - name: MF_ITEM_ID
+      - name: TITLE
+      - name: STYLE_ID
+      - name: MF_STYLE_ID
+      - name: STYLE_TYPE
+      - name: COLOR_ID
+      - name: COLOR
+      - name: IS_PRINT
+      - name: SIZE_ID
+      - name: MF_SIZE_ID
+      - name: DISPLAY_SIZE
+      - name: OFFERED_SIZE
+      - name: SIZE_SEQUENCE
+      - name: WAS_PRICE
+      - name: SELLING_DEPARTMENT
+      - name: MEDIA_KEY
+      - name: SELLING_PRICE
+      - name: SELLING_PRICE_START_DATE
+      - name: SELLING_PRICE_END_DATE
+      - name: IMAGE_URL
+      - name: PRODUCT_URL
+      - name: QUANTITY
+      - name: BACKORDER_QUANTITY
+      - name: CREATED_AT
+  - name: mp_active_variations
+    description: "Model for mp active variations"
+    columns:
+      - name: BRAND_ID
+      - name: BRAND_CODE
+      - name: PRODUCT_ID
+      - name: COLOR_ID
+      - name: COLOR
+      - name: VARIATION_ID
+      - name: TITLE
+      - name: MS_DESCRIPTION
+      - name: PCM_SEO_DESCRIPTION
+      - name: PCM_BRAND
+      - name: PRODUCT_URL
+      - name: IMAGE_URL
+      - name: LAYDOWN_IMAGE_URL
+      - name: ALT_IMAGES
+      - name: CREATED_AT
+  - name: mp_daily_active_products
+    description: "Model for mp daily active products"
+    columns:
+      - name: BRAND_ID
+      - name: BRAND_CODE
+      - name: PRODUCT_ID
+      - name: MF_MASTER_ITEM_ID
+      - name: TITLE
+      - name: MS_DESCRIPTION
+      - name: PCM_BRAND
+      - name: MP_VENDOR_ID
+      - name: IS_DIA
+      - name: PCM_SEO_DESCRIPTION
+      - name: CUSTOMER_REVIEW_COUNT
+      - name: CUSTOMER_REVIEW_AVERAGE
+      - name: IMAGE_URL
+      - name: PRODUCT_URL
+      - name: DIVISION
+      - name: CATEGORY
+      - name: SUBCATEGORY
+      - name: HASH_KEY
+  - name: mp_daily_active_styles
+    description: "Model for mp daily active styles"
+    columns:
+      - name: BRAND_ID
+      - name: BRAND_CODE
+      - name: PRODUCT_ID
+      - name: MF_MASTER_ITEM_ID
+      - name: MF_ITEM_ID
+      - name: TITLE
+      - name: STYLE_ID
+      - name: MF_STYLE_ID
+      - name: STYLE_TYPE
+      - name: COLOR_ID
+      - name: COLOR
+      - name: IS_PRINT
+      - name: SIZE_ID
+      - name: MF_SIZE_ID
+      - name: DISPLAY_SIZE
+      - name: OFFERED_SIZE
+      - name: SIZE_SEQUENCE
+      - name: WAS_PRICE
+      - name: SELLING_DEPARTMENT
+      - name: MEDIA_KEY
+      - name: SELLING_PRICE
+      - name: SELLING_PRICE_START_DATE
+      - name: SELLING_PRICE_END_DATE
+      - name: IMAGE_URL
+      - name: PRODUCT_URL
+      - name: QUANTITY
+      - name: BACKORDER_QUANTITY
+      - name: HASH_KEY
+  - name: mp_daily_active_variations
+    description: "Model for mp daily active variations"
+    columns:
+      - name: BRAND_ID
+      - name: BRAND_CODE
+      - name: PRODUCT_ID
+      - name: COLOR_ID
+      - name: COLOR
+      - name: VARIATION_ID
+      - name: TITLE
+      - name: MS_DESCRIPTION
+      - name: PCM_SEO_DESCRIPTION
+      - name: PCM_BRAND
+      - name: PRODUCT_URL
+      - name: IMAGE_URL
+      - name: LAYDOWN_IMAGE_URL
+      - name: ALT_IMAGES
+      - name: HASH_KEY
+  - name: mp_daily_products
+    description: "Model for mp daily products"
+    columns:
+      - name: BRAND_ID
+      - name: BRAND_CODE
+      - name: PRODUCT_ID
+      - name: MF_MASTER_ITEM_ID
+      - name: TITLE
+      - name: MS_DESCRIPTION
+      - name: PCM_BRAND
+      - name: PCM_SEO_DESCRIPTION
+      - name: CUSTOMER_REVIEW_COUNT
+      - name: CUSTOMER_REVIEW_AVERAGE
+      - name: IMAGE_URL
+      - name: PRODUCT_URL
+      - name: IS_ACTIVE
+      - name: DIVISION
+      - name: CATEGORY
+      - name: SUBCATEGORY
+  - name: mp_product_variations_launch_dates
+    description: "Incremental table for newly added beyonsee variations"
+    columns:
+      - name: PRODUCT_ID
+      - name: COLOR_ID
+      - name: LAUNCH_DATE

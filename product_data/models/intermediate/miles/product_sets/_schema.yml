@@ -1,0 +1,57 @@
+version: 2
+
+models:
+  - name: int_fbb_active_product_sets
+    description: "Intermediate model for the miles product sets"
+    columns:
+      - name: PRODUCT_SET_ID
+      - name: PRODUCT_ID
+      - name: BRAND_CODE
+      - name: TITLE
+      - name: LIST_PRICE
+      - name: SALE_PRICE
+      - name: PRODUCT_PRICE
+      - name: PRODUCT_SALE_PRICE
+      - name: URL
+      - name: THUMB_IMAGE
+      - name: ON_HOVER_IMAGE
+  - name: int_fbb_product_set_categories
+    description: "Intermediate model that creates active website categories for product sets"
+    columns:
+      - name: PRODUCT_SET_ID
+      - name: IS_INTERNATIONAL
+  - name: int_fbb_product_sets_is_international
+    description: "Intermediate model to determine if a miles product set is international"
+    columns:
+      - name: PRODUCT_SET_ID
+      - name: IS_INTERNATIONAL
+  - name: int_fbb_product_sets_prices
+    description: "Intermediate model to get the miles product set prices"
+    columns:
+      - name: PRODUCT_SET_ID
+      - name: PRICE
+      - name: MIN_BROWSE_PRICE
+      - name: MIN_BRW_PRICE
+      - name: MAX_BRW_PRICE
+      - name: MIN_CLR_PRICE
+      - name: MAX_CLR_PRICE
+      - name: MIN_FS_PRICE
+      - name: MAX_FS_PRICE
+      - name: MIN_BRW_ONLY_PRICE
+      - name: MAX_BRW_ONLY_PRICE
+      - name: MIN_CLR_ONLY_PRICE
+      - name: MAX_CLR_ONLY_PRICE
+      - name: BRW_LIST_PRICE
+      - name: BRW_SALE_PRICE
+      - name: CLR_LIST_PRICE
+      - name: CLR_SALE_PRICE
+      - name: FS_LIST_PRICE
+      - name: FS_SALE_PRICE
+      - name: BRW_ONLY_LIST_PRICE
+      - name: BRW_ONLY_SALE_PRICE
+      - name: CLR_ONLY_LIST_PRICE
+      - name: CLR_ONLY_SALE_PRICE
+  - name: int_eligible_product_set_ids
+    description: "Intermediate model to get the eligible product set ids (status = 1 etc.)"
+    columns:
+      - name: PRODUCT_SET_ID

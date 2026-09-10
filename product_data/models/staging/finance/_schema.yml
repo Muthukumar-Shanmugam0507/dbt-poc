@@ -1,0 +1,35 @@
+version: 2
+
+models:
+  - name: stg_prod__finance_cmn_division_dept
+    description: "Table for division departments"
+    columns:
+      - name: DIVISION_DEPT
+      - name: DIVISION_DEPT_AUX
+      - name: DEPT_GROUPS
+      - name: DEPT_DESCRIPTION
+      - name: DEPT_CATEGORY
+      - name: PRODUCT_MGR
+      - name: DMM
+      - name: CONTROL_BUYER
+      - name: INVENTORY_DIRECTOR
+      - name: DEPT_CATEGORY_ROLLUP
+  - name: stg_prod__finance_cmn_item_owner
+    description: "Table for mf product division departments"
+    columns:
+      - name: OWNING_DIVISION
+      - name: DEPT
+      - name: DIVISION_DEPT
+      - name: ITEM_NUMBER
+      - name: MASTER_ITEM_NUMBER
+      - name: DESCRIPTION_FULL
+      - name: PRIVATE_LABEL
+      - name: NATIONAL_BRAND
+      - name: PERSONALIZE_SW
+      - name: DROPSHIP_SW
+      - name: HEMMABLE_SW
+      - name: NATIONAL_BRAND_SW
+      - name: INTRO_SEASON
+      - name: REINTRO_SEASON
+      - name: INTRO_SEASON_CALC
+      - name: REINTRO_SEASON_CALC

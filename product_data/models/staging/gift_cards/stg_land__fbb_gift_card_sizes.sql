@@ -1,0 +1,14 @@
+select
+	to_varchar(GIFTCARDSIZEID) as GIFT_CARD_SIZE_ID
+	, to_varchar(GIFTCARDSTYLEID) as GIFT_CARD_STYLE_ID
+	, nullif(replace(trim(upper(MFSIZEID)), chr(0), ''), '') as MF_SIZE_ID
+	, nullif(replace(trim(DISPLAYSIZE), chr(0), ''), '') as DISPLAY_SIZE
+    , TRY_TO_DECIMAL(NULLIF(REPLACE(TRIM(WASPRICE), CHR(0), ''), ''), 10, 2) AS WAS_PRICE
+    , TRY_TO_DECIMAL(NULLIF(REPLACE(TRIM(SELLINGPRICE), CHR(0), ''), ''), 10, 2) AS SELLING_PRICE
+	, STOCKQUANTITY as STOCK_QUANTITY
+	, STATUS
+    , date(DATECREATED) as CREATED_AT
+    , date(DATECHANGED) as UPDATED_AT
+	, MODIFIEDBY as MODIFIED_BY
+from
+    {{source('FBB_GIFT_CARDS', 'GIFTCARDSIZE')}}

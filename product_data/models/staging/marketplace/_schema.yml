@@ -1,0 +1,41 @@
+version: 2
+
+models:
+  - name: stg_land__mp_products
+    description: "View from LAND database - MP_PRODUCT table"
+
+  - name: stg_land__mp_styles
+    description: "View from LAND database - MP_STYLE table"
+
+  - name: stg_land__mp_sizes
+    description: "View from LAND database - MP_SIZE table"
+
+  - name: stg_land__mp_brands
+    description: "View from LAND database - MP_BRAND table"
+
+  - name: stg_land__mp_colors
+    description: "View from LAND database - MP_COLOR table"
+
+  - name: stg_land__mp_inventory
+    description: "View from LAND database - MP_INVENTORY table"
+
+  - name: stg_land__mp_prices
+    description: "View from LAND database - MP_PRICE table"
+
+  - name: stg_land__mp_images
+    description: "View from LAND database - MP_IMAGE table"
+
+  - name: stg_land__mp_color_images
+    description: "View from LAND database - MP_COLORIMAGE table"
+
+  - name: stg_land__mp_vendors
+    description: "View from LAND database - MP_VENDOR table"
+
+  - name: stg_land__mp_size_conversions
+    description: "View from LAND database - MP_SIZECONVERSION table"
+
+  - name: stg_land__mp_product_attribute_values
+    description: "View from LAND database - MP_PRODUCTATTRIBUTEVALUE table"
+
+  - name: stg_land__mp_product_images
+    description: "View from LAND database - MP_PRODUCTIMAGE table"

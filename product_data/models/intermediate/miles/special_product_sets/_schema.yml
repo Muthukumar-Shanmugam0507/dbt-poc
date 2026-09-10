@@ -1,0 +1,24 @@
+version: 2
+
+models:
+  - name: int_fbb_active_special_product_sets
+    description: "Intermediate model for the special product sets"
+    columns:
+      - name: SPECIAL_PRODUCT_SET_ID
+      - name: PRODUCT_ID
+      - name: TITLE
+      - name: LONG_DESCRIPTION
+      - name: URL
+      - name: THUMB_IMAGE
+      - name: VARIATION_GROUP
+      - name: LIST_PRICE
+      - name: SALE_PRICE
+      - name: COLOR_PRICE
+      - name: COLOR_SALE_PRICE
+      - name: IS_INTERNATIONAL
+      - name: IS_SPECIAL_PRODUCT_SET
+  - name: int_fbb_special_product_sets_is_international
+    description: "Intermediate model for the special product sets to check if they are international"
+    columns:
+          - name: SPECIAL_PRODUCT_SET_ID
+          - name: IS_INTERNATIONAL

@@ -1,0 +1,15 @@
+version: 2
+
+sources:
+  - name: KOBE
+    database: DS_PROJECTS
+    schema: PRODUCT_DATA_MANAGEMENT
+    tables:
+      - name: KOBE_TAXONOMY_MAP
+      - name: MAP_CARE_ATTRIBUTES
+  - name: PDM
+    database: DS_PROJECTS
+    schema: PRODUCT_DATA_MODEL
+    tables:
+      - name: MAPPING_BETWEEN_APPROVED_AND_WEBSITE
+      - name: BRYLANEHOME_PRODUCT_ATTRIBUTES

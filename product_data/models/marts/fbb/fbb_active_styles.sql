@@ -1,0 +1,33 @@
+select
+    BRAND_ID
+    , BRAND_CODE
+    , PRODUCT_ID
+    , MF_MASTER_ITEM_ID
+    , MF_ITEM_ID
+    , TITLE
+    , STYLE_ID
+    , MF_STYLE_ID
+    , STYLE_TYPE
+    , COLOR_ID
+    , COLOR
+    , IS_PRINT
+    , SIZE_ID
+    , MF_SIZE_ID
+    , DISPLAY_SIZE
+    , OFFERED_SIZE
+    , SIZE_SEQUENCE
+    , WAS_PRICE
+    , SELLING_DEPARTMENT
+    , MEDIA_KEY
+    , SELLING_PRICE
+    , SELLING_PRICE_START_DATE
+    , SELLING_PRICE_END_DATE
+    , IMAGE_URL
+    , PRODUCT_URL
+    , QUANTITY
+    , BACKORDER_QUANTITY
+    , CLEARANCE_INDICATOR
+    , IS_FINAL_SALE
+    , date(DBT_VALID_FROM) as CREATED_AT
+from
+    {{ ref('int_fbb_active_styles_from_snapshot') }}

@@ -1,0 +1,8 @@
+select
+    PRODUCTID as PRODUCT_ID
+    , URL
+    , RELATIVEURL as RELATIVE_URL
+    , date(DATECREATED) as CREATED_AT
+    , date(DATECHANGED) as UPDATED_AT
+from
+    {{source('FBB_PRODUCTS', 'SFRA_PRODUCTURL')}}

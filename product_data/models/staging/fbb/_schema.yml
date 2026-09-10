@@ -1,0 +1,110 @@
+version: 2
+
+models:
+  - name: stg_land__fbb_products
+    description: "View from LAND database for FBB products"
+
+    columns:
+      - name: PRODUCT_ID
+        description: "This is the SFCC product id"
+      - name: MF_MASTER_ITEM_ID
+        description: "This is the Mainframe master id"
+      - name: BRAND_ID
+        description: "This is the brand id as number"
+      - name: MF_DEPARTMENT
+        description: "This is the Mainframe department id as number"
+      - name: CLASSIFICATION_ID
+        description: "This is the SFCC classification id as number"
+      - name: SFFC_CATEGORY_ID
+        description: "This is the SFCC category id as string"
+      - name: TITLE
+        description: "This is the products short title"
+      - name: SFCC_URL
+        description: "This is the SFFC url directing to ww site"
+      - name: IS_PURGED
+        description: "Boolean that indicates if the product is purged"
+      - name: STATUS
+        description: "The stats of the product 1-ACTIVE, 2-INACTIVE, 3-PURGED"
+      - name: CREATED_AT
+        description: "Date that the product was created"
+      - name: UPDATED_AT
+        description: "Date that the product was updated"
+      - name: MF_UPDATED_AT
+        description: "Date the product was updated in Mainframe"
+      - name: PCM_UPDATED_AT
+        description: "Date the product was updated in PCM"
+
+  - name: stg_land_fbb__brands
+    description: "View from LAND database for FBB brands"
+
+  - name: stg_land_fbb__colors
+    description: "View from LAND database for FBB colors"
+
+  - name: stg_land_fbb__styles
+    description: "View from LAND database for FBB styles"
+
+  - name: stg_land_fbb__sizes
+    description: "View from LAND database for FBB sizes"
+
+  - name: stg_land_fbb__inventory
+    description: "View from LAND database for FBB inventory"
+
+  - name: stg_land__fbb_prices
+    description: "View from LAND database for FBB price"
+
+  - name: stg_land_fbb__product_images
+    description: "View from LAND database for product images"
+
+  - name: stg_land__fbb_images
+    description: "View from LAND database for images"
+
+  - name: stg_land__fbb_color_images
+    description: "View from LAND database - COLORIMAGE table"
+
+  - name: stg_land__fbb_attributes
+    description: "View from LAND database - ATTRIBUTE table"
+
+  - name: stg_land__fbb_product_attribute_values
+    description: "View from LAND database - PRODUCTATTRIBUTEVALUE table"
+
+  - name: stg_land__fbb_omniture_data
+    description: "View from LAND database - OMNITURE_DATA table"
+
+  - name: stg_land__fbb_color_sort_order_skus
+    description: "View from LAND database - COLORSORTORDERSKU table"
+
+  - name: stg_land__fbb_sfra_final_prices
+    description: "View from LAND database - SFRA_FINALPRICE table"
+
+  - name: stg_land__fbb_sfra_final_price_promos
+    description: "View from LAND database - SFRA_FINALPRICEPROMO table"
+
+  - name: stg_land__fbb_sfra_category_product_splits
+    description: "View from LAND database - SFRA_CATEGORY_PRODUCTSPLIT table"
+
+  - name: stg_land__fbb_br_size_conversions
+    description: "View from LAND database - BR_SIZECONVERSION table"
+
+  - name: stg_land__fbb_size_conversions
+    description: "View from LAND database - SIZECONVERSION table"
+
+  - name: stg_land__fbb_classification
+    description: "View from LAND database - CLASSIFICATION table"
+
+  - name: stg_land__fbb_sfra_sizes
+    description: "View from LAND database - SFRA_SIZE table"
+
+  - name: stg_land__fbb_size_selector_table_cp
+    description: "View from LAND database - SIZESELECTORTABLE_CP table"
+
+  - name: stg_land__fbb_color_mappings
+    description: "View from LAND database - COLORMAPPING table"
+
+  - name: stg_land__fbb_sfra_image_urls
+    description: "View from LAND database - SFRA_IMAGEURL table"
+
+  - name: stg_land__fbb_attribute_values
+    description: "View from LAND database - ATTRIBUTEVALUE table"
+
+  - name: stg_land__fbb_sfra_product_urls
+    description: "View from LAND database - SFRA_PRODUCTURL table"

@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: stg_land__fbb_gift_cards
+    description: "Main gift card table"
+
+  - name: stg_land__fbb_gift_card_images
+    description: "Gift card table containing image data"
+
+  - name: stg_land__fbb_gift_card_sizes
+    description: "Gift card table containing size data"
+
+  - name: stg_land__fbb_gift_card_styles
+    description: "Gift card table containing style data"

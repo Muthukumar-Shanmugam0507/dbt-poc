@@ -1,0 +1,20 @@
+version: 2
+
+sources:
+  - name: MP_PRODUCTS
+    database: LAND
+    schema: PRODUCT
+    tables:
+      - name: MP_PRODUCT
+      - name: MP_STYLE
+      - name: MP_SIZE
+      - name: MP_BRAND
+      - name: MP_COLOR
+      - name: MP_INVENTORY
+      - name: MP_PRICE
+      - name: MP_IMAGE
+      - name: MP_COLORIMAGE
+      - name: MP_VENDOR
+      - name: MP_SIZECONVERSION
+      - name: MP_PRODUCTATTRIBUTEVALUE
+      - name: MP_PRODUCTIMAGE

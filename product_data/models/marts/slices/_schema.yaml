@@ -1,0 +1,17 @@
+version: 2
+
+models:
+  - name: fbb_active_slices
+    description: "Model for active slices"
+    columns:
+      - name: PRODUCT_ID
+      - name: COLOR_ID
+      - name: SLICE_ID
+      - name: CREATED_AT
+  - name: fbb_daily_active_slices
+    description: "Model for daily active slices"
+    columns:
+      - name: PRODUCT_ID
+      - name: COLOR_ID
+      - name: SLICE_ID
+      - name: HASH_KEY

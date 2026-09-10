@@ -1,0 +1,60 @@
+version: 2
+
+models:
+  - name: ds_product_level_attributes
+    description: "Table that stores the product level of attribution"
+    columns:
+      - name: PRODUCT_ID
+      - name: BRAND_CODE
+      - name: ATTRIBUTE_NAME
+      - name: ATTRIBUTE_VALUE
+      - name: ANNOTATED_BY
+      - name: CREATED_AT
+      - name: UPDATED_AT
+  - name: kobe_product_level_attributes
+    description: "Table that contains the product level attributes based on the new orthogonal system"
+    columns:
+      - name: PRODUCT_ID
+      - name: ATTRIBUTE_NAME
+      - name: ATTRIBUTE_VALUE
+      - name: ANNOTATED_BY
+      - name: CREATED_AT
+      - name: UPDATED_AT
+  - name: ds_taxonomy_train_data
+    description: "Table that contains the training data of the AI model"
+    columns:
+      - name: PRODUCT_ID
+      - name: COLOR_ID
+      - name: TITLE
+      - name: MS_DESCRIPTION
+      - name: IMAGE_URL
+      - name: TAXONOMY_NAME
+      - name: TAXONOMY_VALUE
+      - name: CREATED_AT
+  - name: kobe_website_product_attributes
+    description: "Table that contains all products that have been annotated in FBB so far"
+    columns:
+      - name: PRODUCT_ID
+      - name: WEBSITE_ATTRIBUTE_NAME
+      - name: WEBSITE_ATTRIBUTE_VALUE
+      - name: CREATED_AT
+  - name: kobe_taxonomy_combination
+    description: "Table that contains all taxonomy combinations -3plets"
+    columns:
+      - name: DIVISION
+      - name: CATEGORY
+      - name: SUBCATEGORY
+  - name: kobe_inference_data
+    description: "Table that contains all new products that need to be attributed"
+    columns:
+      - name: BRAND_ID
+      - name: MF_PRODUCT_ID
+      - name: PRODUCT_ID
+      - name: BRAND_CODE
+      - name: COLOR_ID
+      - name: IMAGE_URL
+      - name: SOURCE
+      - name: TITLE
+      - name: MS_DESCRIPTION
+      - name: WEBSITE
+      - name: DATE_CREATED

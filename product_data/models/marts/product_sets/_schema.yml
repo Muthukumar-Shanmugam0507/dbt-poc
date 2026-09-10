@@ -1,0 +1,20 @@
+version: 2
+
+models:
+  - name: fbb_daily_active_product_sets
+    description: "Model for the fbb daily active product sets"
+    columns:
+      - name: PRODUCT_SET_ID
+      - name: PRODUCT_ID
+      - name: DISPLAY_NAME
+      - name: URL
+      - name: THUMB_IMAGE
+  - name: fbb_active_product_sets
+    description: "Model for the fbb product sets"
+    columns:
+      - name: PRODUCT_SET_ID
+      - name: PRODUCT_ID
+      - name: DISPLAY_NAME
+      - name: URL
+      - name: THUMB_IMAGE
+      - name: CREATED_AT

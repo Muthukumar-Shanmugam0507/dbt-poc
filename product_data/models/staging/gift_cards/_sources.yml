@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: FBB_GIFT_CARDS
+    database: LAND
+    schema: PRODUCT
+    tables:
+      - name: GIFTCARD
+      - name: GIFTCARDIMAGE
+      - name: GIFTCARDSIZE
+      - name: GIFTCARDSTYLE

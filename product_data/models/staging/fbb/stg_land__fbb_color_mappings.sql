@@ -1,0 +1,5 @@
+select
+    trim(GENERICCOLORNAME) as GENERIC_COLOR_NAME
+    , trim(SPECIFICCOLOR) as SPECIFIC_COLOR
+from
+    {{ source('FBB_PRODUCTS', 'COLORMAPPING') }}

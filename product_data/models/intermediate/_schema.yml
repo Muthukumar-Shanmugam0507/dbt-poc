@@ -1,0 +1,32 @@
+version: 2
+
+models:
+  - name: int_fbb_products_partitioned_to_updated_at
+    description: "Model for the fbb products with the latest changes"
+
+  - name: int_fbb_styles_partitioned_to_updated_at
+    description: "Model for the fbb styles with the latest changes"
+
+  - name: int_fbb_colors_partitioned_to_updated_at
+    description: "Model for the fbb colors with the atest changes"
+
+  - name: int_fbb_color_images_partitioned_to_updated_at
+    description: "Model for the fbb color images with the latest changes"
+
+  - name: int_fbb_images_partitioned_to_updated_at
+    description: "Model for the fbb images with the latest changes"
+
+  - name: int_fbb_prices_partitioned_to_updated_at
+    description: "Model for the fbb prices with the latest changes"
+
+  - name: int_fbb_product_images_partitioned_to_updated_at
+    description: "Model for the product images with the latest changes"
+
+  - name: int_fbb_sizes_partitioned_to_updated_at
+    description: "Model for the product sizes with the latest changes"
+
+  - name: int_fbb_inventory_partitioned_to_updated_at
+    description: "Model for the product inventory with the latest changes"
+
+  - name: int_fbb_brands_partitioned_to_updated_at
+    description: "Model for the available brands"

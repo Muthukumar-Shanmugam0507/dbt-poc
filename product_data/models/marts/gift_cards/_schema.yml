@@ -1,0 +1,76 @@
+version: 2
+
+models:
+  - name: fbb_active_gift_cards
+    description: "Table for fbb active gift cards"
+    columns:
+      - name: PRODUCT_ID
+      - name: MF_ITEM_ID
+      - name: BRAND_ID
+      - name: PRODUCT_TYPE_ID
+      - name: TITLE
+      - name: DESCRIPTION
+      - name: BRAND_CODE
+      - name: BRAND_NAME
+      - name: PRODUCT_URL
+      - name: IMAGE_URL
+      - name: HASH_KEY
+      - name: CREATED_AT
+
+  - name: fbb_daily_active_gift_cards
+    description: "Table for fbb daily active gift cards"
+    columns:
+      - name: PRODUCT_ID
+      - name: MF_ITEM_ID
+      - name: BRAND_ID
+      - name: PRODUCT_TYPE_ID
+      - name: TITLE
+      - name: DESCRIPTION
+      - name: BRAND_CODE
+      - name: BRAND_NAME
+      - name: PRODUCT_URL
+      - name: IMAGE_URL
+      - name: HASH_KEY
+
+  - name: fbb_daily_active_gift_card_styles
+    description: "Table for fbb daily active gift card styles on size level"
+    columns:
+      - name: SIZE_ID
+      - name: STYLE_ID
+      - name: PRODUCT_ID
+      - name: MF_SIZE_ID
+      - name: COLOR_ID
+      - name: COLOR
+      - name: BRAND_CODE
+      - name: BRAND_NAME
+      - name: PRICE
+      - name: SALE_PRICE
+      - name: PRODUCT_URL
+      - name: IMAGE_URL
+      - name: THUMB_IMAGE
+      - name: QUANTITY
+      - name: CLEARANCE_INDICATOR
+      - name: DISPLAY_SIZE
+      - name: HASH_KEY
+
+  - name: fbb_active_gift_card_styles
+    description: "Table for fbb active gift card styles on size level"
+    columns:
+      - name: SIZE_ID
+      - name: STYLE_ID
+      - name: PRODUCT_ID
+      - name: MF_SIZE_ID
+      - name: COLOR_ID
+      - name: COLOR
+      - name: BRAND_CODE
+      - name: BRAND_NAME
+      - name: PRICE
+      - name: SALE_PRICE
+      - name: PRODUCT_URL
+      - name: IMAGE_URL
+      - name: THUMB_IMAGE
+      - name: QUANTITY
+      - name: CLEARANCE_INDICATOR
+      - name: DISPLAY_SIZE
+      - name: HASH_KEY
+      - name: CREATED_AT

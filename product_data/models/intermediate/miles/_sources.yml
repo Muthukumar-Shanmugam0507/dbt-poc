@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: SPS_PRODUCT_TYPES
+    database: DS_PROJECTS
+    schema: PRODUCT_DATA_MANAGEMENT
+    tables:
+      - name: SPS_PRODUCT_TYPE

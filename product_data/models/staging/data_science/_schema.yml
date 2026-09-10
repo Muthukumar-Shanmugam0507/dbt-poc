@@ -1,0 +1,5 @@
+version: 2
+
+models:
+  - name: stg_pdm__attributes
+    description: "View from PDM schema for products that we have produced attributes"

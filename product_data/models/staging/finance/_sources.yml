@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: PROD_CATEGORIES
+    database: PROD
+    schema: FINANCE
+    tables:
+      - name: CMN_ITEM_OWNER
+      - name: CMN_DIVISION_DEPT

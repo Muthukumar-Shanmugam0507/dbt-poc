@@ -1,0 +1,10 @@
+version: 2
+
+models:
+  - name: ds_product_level_attribution
+    description: "Table that stores the 1st level of attribution"
+    columns:
+      - name: PRODUCT_ID
+      - name: DIVISION
+      - name: CATEGORY
+      - name: SUBCATEGORY

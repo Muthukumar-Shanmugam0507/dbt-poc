@@ -1,0 +1,107 @@
+version: 2
+
+models:
+  - name: int_kobe_fbb_size_to_style
+    description: "Intermediate model that brings STG size level models to style level"
+    columns:
+      - name: STYLE_ID
+      - name: QUANTITY
+      - name: BACKORDER_QUANTITY
+  - name: int_kobe_product_to_style
+    description: "Intermediate model that brings product level models to style level"
+    columns:
+      - name: OWNING_BRAND_ID
+      - name: OWNING_BRAND
+      - name: DEPARTMENT
+      - name: PCM_BRAND
+      - name: SF_PRODUCT_ID
+      - name: MF_PRODUCT_ID
+      - name: SF_COLOR_ID
+      - name: MF_COLOR_ID
+      - name: STYLE_ID
+      - name: TITLE
+      - name: MF_TITLE
+      - name: DESCRIPTION
+      - name: COLOR
+      - name: PRODUCT_URL
+      - name: PRODUCT_COLOR_URL
+      - name: IS_LIVE
+      - name: IS_DROPSHIP
+  - name: int_kobe_fbb_style_to_color
+    description: "Intermediate model that brings converted style level models to color level"
+    columns:
+      - name: OWNING_BRAND_ID
+      - name: OWNING_BRAND
+      - name: DEPARTMENT
+      - name: PCM_BRAND
+      - name: SF_PRODUCT_ID
+      - name: MF_PRODUCT_ID
+      - name: MF_ITEM_IDS
+      - name: SF_COLOR_ID
+      - name: MF_COLOR_ID
+      - name: TITLE
+      - name: MF_TITLE
+      - name: DESCRIPTION
+      - name: COLOR
+      - name: PRODUCT_URL
+      - name: PRODUCT_COLOR_URL
+      - name: HAS_INVENTORY
+      - name: IS_LIVE
+      - name: IS_DROPSHIP
+  - name: int_kobe_flex_product_sets
+    description: "Intermediate model that gets product set data"
+    columns:
+      - name: PRODUCT_SET_ID
+      - name: DISPLAY_NAME
+      - name: LONG_DESCRIPTION
+      - name: URL
+      - name: DEFAULT_THUMB_IMAGE
+      - name: DEFAULT_ON_HOVER_IMAGE
+      - name: IS_LIVE
+  - name: int_kobe_flex_sps
+    description: "Intermediate model that gets special product set data"
+    columns:
+      - name: SF_PRODUCT_ID
+      - name: TITLE
+      - name: DESCRIPTION
+      - name: URL
+      - name: DEFAULT_THUMB_IMAGE
+      - name: DEFAULT_ON_HOVER_IMAGE
+      - name: IS_LIVE
+  - name: int_kobe_flex_gift_cards
+    description: "Intermediate model that gets gift card data"
+    columns:
+      - name: EFFORT
+      - name: OWNING_BRAND
+      - name: BRAND_CODE
+      - name: DEPARTMENT
+      - name: BRAND_LABEL
+      - name: SF_PRODUCT_ID
+      - name: MF_ID
+      - name: SF_COLOR_ID
+      - name: STYLE_IDS
+      - name: TITLE
+      - name: DESCRIPTION
+      - name: COLOR_NAME
+      - name: COLOR_SORT_ORDER
+      - name: IMAGE_NAME
+      - name: PRODUCT_URL
+      - name: PRODUCT_COLOR_URL
+      - name: HAS_INVENTORY
+      - name: IS_LIVE
+      - name: IS_SLICE
+  - name: int_kobe_flex_fbb_departments
+    description: "Intermediate model that gets division department data"
+    columns:
+      - name: EFFORT
+  - name: int_kobe_flex_fbb_detached_images
+    description: "Intermediate model that gets detached images"
+    columns:
+      - name: IMAGE_ID
+      - name: IMAGE_TYPE_ID
+      - name: IMAGE_NAME
+      - name: BRAND_ID
+      - name: MF_DEPARTMENT_ID
+      - name: MF_ITEM_ID
+      - name: MF_STYLE_ID
+      - name: IMAGE_URL

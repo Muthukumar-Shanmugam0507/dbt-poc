@@ -1,0 +1,14 @@
+select
+    nullif(replace(trim(upper(MFSIZEID)), chr(0), ''), '') as MF_SIZE_ID
+    , MFDISPLAYSIZE as MF_DISPLAY_SIZE
+    , DISPLAYSIZE as DISPLAY_SIZE
+    , SIZESEQUENCE as SIZE_SEQUENCE
+    , SPLITSIZE1 as SPLIT_SIZE_1
+    , SPLITSIZE2 as SPLIT_SIZE_2
+    , SIZESEQUENCE2 as SIZE_SEQUENCE_2
+    , BRANDID as BRAND_ID
+    , GROUPID as GROUP_ID
+    , date(DATECREATED) as CREATED_AT
+    , date(DATECHANGED) as UPDATED_AT
+from
+    {{ source('MP_PRODUCTS', 'MP_SIZECONVERSION') }}

@@ -1,0 +1,202 @@
+version: 2
+
+models:
+  - name: int_mp_active_products
+    description: "Intermediate model for mp daily active products"
+    columns:
+      - name: BRAND_ID
+      - name: BRAND_CODE
+      - name: PRODUCT_ID
+      - name: MF_MASTER_ITEM_ID
+      - name: TITLE
+      - name: MS_DESCRIPTION
+      - name: PCM_BRAND
+      - name: MP_VENDOR_ID
+      - name: IS_DIA
+      - name: PCM_SEO_DESCRIPTION
+      - name: CUSTOMER_REVIEW_COUNT
+      - name: CUSTOMER_REVIEW_AVERAGE
+      - name: IMAGE_URL
+      - name: PRODUCT_URL
+      - name: DIVISION
+      - name: CATEGORY
+      - name: SUBCATEGORY
+      - name: CREATED_AT
+  - name: int_mp_active_products_from_snapshot
+    description: "Intermediate model to get latest mp daily active products from snapshot"
+    columns:
+      - name: BRAND_ID
+      - name: BRAND_CODE
+      - name: PRODUCT_ID
+      - name: MF_MASTER_ITEM_ID
+      - name: TITLE
+      - name: MS_DESCRIPTION
+      - name: PCM_BRAND
+      - name: MP_VENDOR_ID
+      - name: IS_DIA
+      - name: PCM_SEO_DESCRIPTION
+      - name: CUSTOMER_REVIEW_COUNT
+      - name: CUSTOMER_REVIEW_AVERAGE
+      - name: IMAGE_URL
+      - name: PRODUCT_URL
+      - name: DIVISION
+      - name: CATEGORY
+      - name: SUBCATEGORY
+      - name: HASH_KEY
+  - name: int_mp_active_styles_from_snapshot
+    description: "Intermediate model to get latest mp daily active styles from snapshot"
+    columns:
+      - name: BRAND_ID
+      - name: BRAND_CODE
+      - name: PRODUCT_ID
+      - name: MF_MASTER_ITEM_ID
+      - name: MF_ITEM_ID
+      - name: TITLE
+      - name: STYLE_ID
+      - name: MF_STYLE_ID
+      - name: STYLE_TYPE
+      - name: COLOR_ID
+      - name: COLOR
+      - name: IS_PRINT
+      - name: SIZE_ID
+      - name: MF_SIZE_ID
+      - name: DISPLAY_SIZE
+      - name: OFFERED_SIZE
+      - name: SIZE_SEQUENCE
+      - name: WAS_PRICE
+      - name: SELLING_DEPARTMENT
+      - name: MEDIA_KEY
+      - name: SELLING_PRICE
+      - name: SELLING_PRICE_START_DATE
+      - name: SELLING_PRICE_END_DATE
+      - name: IMAGE_URL
+      - name: PRODUCT_URL
+      - name: QUANTITY
+      - name: BACKORDER_QUANTITY
+      - name: HASH_KEY
+  - name: int_mp_active_variations_from_snapshot
+    description: "Intermediate model to get latest mp daily active variations from snapshot"
+    columns:
+      - name: BRAND_ID
+      - name: BRAND_CODE
+      - name: PRODUCT_ID
+      - name: COLOR_ID
+      - name: COLOR
+      - name: VARIATION_ID
+      - name: TITLE
+      - name: MS_DESCRIPTION
+      - name: PCM_SEO_DESCRIPTION
+      - name: PCM_BRAND
+      - name: PRODUCT_URL
+      - name: IMAGE_URL
+      - name: LAYDOWN_IMAGE_URL
+      - name: HASH_KEY
+  - name: int_mp_active_variations_joined_with_laydowns
+    description: "Intermediate model for joining laydown images with mp variations"
+    columns:
+      - name: BRAND_ID
+      - name: BRAND_CODE
+      - name: PRODUCT_ID
+      - name: COLOR_ID
+      - name: COLOR
+      - name: VARIATION_ID
+      - name: TITLE
+      - name: MS_DESCRIPTION
+      - name: PCM_SEO_DESCRIPTION
+      - name: PCM_BRAND
+      - name: PRODUCT_URL
+      - name: IMAGE_URL
+      - name: LAYDOWN_IMAGE_URL
+  - name: int_mp_daily_products
+    description: "Intermediate model for mp daily products, that groups columns of int_mp_styles_joined_with_colors"
+    columns:
+      - name: BRAND_ID
+      - name: BRAND_CODE
+      - name: PRODUCT_ID
+      - name: MF_MASTER_ITEM_ID
+      - name: TITLE
+      - name: MS_DESCRIPTION
+      - name: PCM_BRAND
+      - name: PCM_SEO_DESCRIPTION
+      - name: CUSTOMER_REVIEW_COUNT
+      - name: CUSTOMER_REVIEW_AVERAGE
+      - name: IMAGE_URL
+  - name: int_mp_styles_joined_with_colors
+    description: "Intermediate model that joins mp styles with colors"
+    columns:
+      - name: BRAND_ID
+      - name: BRAND_CODE
+      - name: TITLE
+      - name: PRODUCT_ID
+      - name: MF_MASTER_ITEM_ID
+      - name: CLASSIFICATION_ID
+      - name: VENDOR_ID
+      - name: MS_DESCRIPTION
+      - name: PCM_BRAND
+      - name: PCM_SEO_DESCRIPTION
+      - name: CUSTOMER_REVIEW_COUNT
+      - name: CUSTOMER_REVIEW_AVERAGE
+      - name: MF_ITEM_ID
+      - name: STYLE_ID
+      - name: MF_STYLE_ID
+      - name: STYLE_TYPE
+      - name: COLOR_ID
+      - name: COLOR
+      - name: IS_PRINT
+      - name: SIZE_ID
+      - name: MF_SIZE_ID
+      - name: DISPLAY_SIZE
+      - name: OFFERED_SIZE
+      - name: SIZE_SEQUENCE
+      - name: WAS_PRICE
+      - name: SELLING_DEPARTMENT
+      - name: MEDIA_KEY
+      - name: SELLING_PRICE
+      - name: SELLING_PRICE_START_DATE
+      - name: SELLING_PRICE_END_DATE
+      - name: IMAGE_URL
+      - name: PRODUCT_URL
+      - name: QUANTITY
+      - name: BACKORDER_QUANTITY
+      - name: NEXT_AVAILABLE_DATE
+      - name: STYLE_STATUS
+      - name: SIZE_STATUS
+      - name: PRICE_STATUS
+      - name: PRODUCT_STATUS
+      - name: INVENTORY_STATUS
+      - name: COLOR_IMAGE_STATUS
+      - name: IMAGE_STATUS
+      - name: MP_VENDOR_ID
+      - name: VENDOR_STATUS
+      - name: IMAGE_TYPE_ID
+      - name: ENABLED_PRODUCTION
+  - name: int_mp_alt_images
+    description: "Intermediate model that joins mp products with alt images"
+    columns:
+      - name: PRODUCT_ID
+      - name: ALT_IMAGES
+  - name: int_mp_variations_joined_with_all_images
+    description: "Intermediate model that adds alt images to variations"
+    columns:
+      - name: BRAND_ID
+      - name: BRAND_CODE
+      - name: PRODUCT_ID
+      - name: COLOR_ID
+      - name: COLOR
+      - name: VARIATION_ID
+      - name: TITLE
+      - name: MS_DESCRIPTION
+      - name: PCM_SEO_DESCRIPTION
+      - name: PCM_BRAND
+      - name: PRODUCT_URL
+      - name: IMAGE_URL
+      - name: LAYDOWN_IMAGE_URL
+      - name: ALT_IMAGES
+  - name: int_mp_active_variation_inventory
+    description: "Intermediate model for mp active variations and their inventory"
+    columns:
+      - name: PRODUCT_ID
+      - name: COLOR_ID
+      - name: FULFILLMENT_INDICATOR
+      - name: QUANTITY
+      - name: BACKORDER_QUANTITY

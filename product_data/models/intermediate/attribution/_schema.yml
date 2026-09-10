@@ -1,0 +1,30 @@
+version: 2
+
+models:
+  - name: int_unpivoted_kobe_product_level_attributes
+    description: "Table that depicts the product level of attribution"
+    columns:
+      - name: PRODUCT_ID
+      - name: ATTRIBUTE_NAME
+      - name: ATTRIBUTE_VALUE
+      - name: ANNOTATED_BY
+      - name: CREATED_AT
+      - name: UPDATED_AT
+  - name: int_attributes_mapped_to_website
+    description: "Table that contains all products attributes by balkan team"
+    columns:
+      - name: PRODUCT_ID
+      - name: ATTRIBUTE_NAME
+      - name: ATTRIBUTE_VALUE
+  - name: int_care_attributes_mapped_to_website
+    description: "Table that contains all care attributes coming from FBB vendors"
+    columns:
+      - name: PRODUCT_ID
+      - name: WEBSITE_ATTRIBUTE_NAME
+      - name: WEBSITE_ATTRIBUTE_VALUE
+  - name: int_bh_attributes_mapped_to_website
+    description: "Table that contains some BH products (mostly windows) that have been annotated for a specific task"
+    columns:
+      - name: PRODUCT_ID
+      - name: WEBSITE_ATTRIBUTE_NAME
+      - name: WEBSITE_ATTRIBUTE_VALUE

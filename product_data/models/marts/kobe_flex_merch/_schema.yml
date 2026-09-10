@@ -1,0 +1,150 @@
+version: 2
+
+models:
+  - name: kobe_fbb_daily_variants
+    description: "Table for daily fbb variants"
+    columns:
+      - name: BRAND_CODE
+      - name: PRODUCT_ID
+      - name: COLOR_ID
+      - name: VARIANT_ID
+      - name: COLOR_NAME
+      - name: TITLE
+      - name: DESCRIPTION
+      - name: IMAGE_URL
+      - name: PRODUCT_URL
+      - name: IS_LIVE
+      - name: HAS_INVENTORY
+      - name: HASH_KEY
+  - name: kobe_mp_daily_variants
+    description: "Table for daily mp variants"
+    columns:
+      - name: BRAND_CODE
+      - name: PRODUCT_ID
+      - name: COLOR_ID
+      - name: VARIANT_ID
+      - name: COLOR_NAME
+      - name: TITLE
+      - name: DESCRIPTION
+      - name: IMAGE_URL
+      - name: PRODUCT_URL
+      - name: IS_LIVE
+      - name: HAS_INVENTORY
+      - name: CREATED_AT
+  - name: kobe_fbb_variants
+    description: "Table for fbb variants"
+    columns:
+      - name: BRAND_CODE
+      - name: PRODUCT_ID
+      - name: COLOR_ID
+      - name: VARIANT_ID
+      - name: COLOR_NAME
+      - name: TITLE
+      - name: DESCRIPTION
+      - name: IMAGE_URL
+      - name: PRODUCT_URL
+      - name: IS_LIVE
+      - name: HAS_INVENTORY
+      - name: HASH_KEY
+  - name: kobe_mp_variants
+    description: "Table for mp variants"
+    columns:
+      - name: BRAND_CODE
+      - name: PRODUCT_ID
+      - name: COLOR_ID
+      - name: VARIANT_ID
+      - name: COLOR_NAME
+      - name: TITLE
+      - name: DESCRIPTION
+      - name: IMAGE_URL
+      - name: PRODUCT_URL
+      - name: IS_LIVE
+      - name: HAS_INVENTORY
+      - name: CREATED_AT
+  - name: kobe_flex_fbb_variants
+    description: "Table for KFM variants"
+    columns:
+      - name: EFFORT
+      - name: OWNING_BRAND
+      - name: BRAND_CODE
+      - name: DEPARTMENT
+      - name: BRAND_LABEL
+      - name: CATEGORY
+      - name: SUBCATEGORY
+      - name: SF_PRODUCT_ID
+      - name: MF_ID
+      - name: MF_ITEM_IDS
+      - name: SF_COLOR_ID
+      - name: STYLE_IDS
+      - name: TITLE
+      - name: MF_TITLE
+      - name: DESCRIPTION
+      - name: COLOR_NAME
+      - name: COLOR_SORT
+      - name: PRODUCT_URL
+      - name: PRODUCT_COLOR_URL
+      - name: HAS_INVENTORY
+      - name: IS_LIVE
+      - name: IS_DROPSHIP
+  - name: kobe_flex_product_sets
+    description: "Table for kfm product sets"
+    columns:
+      - name: PRODUCT_SET_ID
+      - name: DISPLAY_NAME
+      - name: LONG_DESCRIPTION
+      - name: URL
+      - name: DEFAULT_THUMB_IMAGE
+      - name: DEFAULT_ON_HOVER_IMAGE
+      - name: IS_LIVE
+  - name: kobe_flex_special_product_sets
+    description: "Table for kfm special product sets"
+    columns:
+      - name: SF_PRODUCT_ID
+      - name: TITLE
+      - name: DESCRIPTION
+      - name: URL
+      - name: DEFAULT_THUMB_IMAGE
+      - name: DEFAULT_ON_HOVER_IMAGE
+      - name: IS_LIVE
+  - name: kobe_flex_gift_cards
+    description: "Table for kfm gift cards"
+    columns:
+      - name: EFFORT
+      - name: OWNING_BRAND
+      - name: BRAND_CODE
+      - name: DEPARTMENT
+      - name: BRAND_LABEL
+      - name: SF_PRODUCT_ID
+      - name: MF_ID
+      - name: SF_COLOR_ID
+      - name: STYLE_IDS
+      - name: TITLE
+      - name: DESCRIPTION
+      - name: COLOR_NAME
+      - name: COLOR_SORT
+      - name: IMAGE_NAME
+      - name: PRODUCT_URL
+      - name: PRODUCT_COLOR_URL
+      - name: HAS_INVENTORY
+      - name: IS_LIVE
+      - name: IS_SLICE
+  - name: kobe_flex_fbb_departments
+    description: "Table for kfm gift cards"
+    columns:
+      - name: EFFORT
+      - name: DEPARTMENT
+      - name: DEPARTMENT_NAME
+      - name: CATEGORY
+  - name: kobe_flex_fbb_detached_images
+    description: "Table for detached images"
+    columns:
+      - name: SF_IMAGE_ID
+      - name: IMAGE_TYPE_ID
+      - name: SF_PRODUCT_IDS
+      - name: SF_COLOR_IDS
+      - name: EFFORT
+      - name: MF_DEPARTMENT_ID
+      - name: MF_ITEM_ID
+      - name: MF_STYLE_ID
+      - name: IMAGE_NAME
+      - name: IMAGE_URL

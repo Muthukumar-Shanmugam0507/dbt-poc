@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: INFO_SCHEMA
+    database: LAND
+    schema: PRODUCT
+    tables:
+      - name: VW_LOAD_HISTORY

@@ -1,0 +1,1 @@
+{{ test_not_null(model=ref('kobe_flex_fbb_detached_images'), column_name='SF_IMAGE_ID') }}

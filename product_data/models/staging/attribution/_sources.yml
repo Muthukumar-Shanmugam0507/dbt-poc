@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: CMN
+    database: PROD
+    schema: FINANCE
+    tables:
+      - name: CMN_ITEM_SEASON
